@@ -1,0 +1,13 @@
+Hey you!
+
+Let me introduce myself, I am Tony Tony Chopper. I will be reminding you to drink water
+every two hours if you allow me to. There are many things you can ask me to do
+such as: helping you decide between which options to pick from,
+supply you with chopper pictures, greet you whenever you get online,
+and provide you daily motivational quotes to help go on with your day.
+
+You can also toggle whether or not you would continue to want to receive water notifications
+with a simple command "/toggle". I will be conducting new medicinal research to provide you
+with more functionality and commands in the future.
+
+=D
