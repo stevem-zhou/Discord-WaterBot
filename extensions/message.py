@@ -1,6 +1,7 @@
 import lightbulb
 import hikari
 import random
+from tooken import stevem_id
 
 
 lightbulb.BotApp.default_enabled_guilds = []
@@ -33,7 +34,7 @@ async def magic(ctx: lightbulb.Context):
         for i in used_messages:
             messages.append(i)
         used_messages.clear()
-    if ctx.author.id != None: #None will be replaced by a targeted user_id
+    if ctx.author.id != stevem_id: #None will be replaced by a targeted user_id
         await ctx.respond('Not available to you 0.0')
     else:
         await ctx.respond(chosen)

@@ -2,6 +2,7 @@ import hikari
 import lightbulb
 from pathlib import Path
 import random
+from tooken import stevem_id
 
 
 photosend = lightbulb.Plugin('Images')
@@ -29,7 +30,7 @@ def photo_album():
 @lightbulb.implements(lightbulb.SlashCommand)
 async def image(ctx:lightbulb.Context):
     f = photo_album()
-    if ctx.author.id != None: #None will be replaced by a targeted user_id
+    if ctx.author.id != stevem_id: #None will be replaced by a targeted user_id
         await ctx.respond('Not available to you 0.0')
     else:
         await ctx.respond(f)
