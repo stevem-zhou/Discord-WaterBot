@@ -6,7 +6,7 @@ from lightbulb.ext import tasks
 
 bot = lightbulb.BotApp(
     token= tokin, 
-    intents=hikari.Intents.ALL_UNPRIVILEGED | hikari.Intents.GUILD_PRESENCES,
+    intents=hikari.Intents.ALL_UNPRIVILEGED | hikari.Intents.GUILD_PRESENCES | hikari.Intents.GUILD_MEMBERS,
     help_slash_command=True
     )
 

@@ -7,7 +7,10 @@ notify_plugin = lightbulb.Plugin("Notify")
 @notify_plugin.listener(hikari.StartedEvent)
 async def notify(event: hikari.StartedEvent):
     cache = await notify_plugin.bot.rest.fetch_my_guilds()
-    # print(type(cache[0]))
+    members = notify_plugin.bot.rest.fetch_members(cache[1])
+    async for i in members:
+        print(i.user.id)
+    
     
     
 
