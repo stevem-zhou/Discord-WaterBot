@@ -27,7 +27,7 @@ async def msg_all(all_ids: list):
         dm_chat = await notify_plugin.bot.rest.create_dm_channel(id)
         await dm_chat.send("Would you like to be reminded to drink water?", component=await build_btns())
         alert_toggle = await check_reaction(dm_chat)
-        await update_toggle(alert_toggle, str(id))
+        await update_toggle(alert_toggle, str(id)) 
 
 
 async def check_reaction(chat_channel):
